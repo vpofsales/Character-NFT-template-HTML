@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Character NFT template</title>
+    <meta property="og:title" content="Character NFT template" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Inter;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-gray-black);
+        background-color: var(--dl-color-gray-white);
+
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
+    />
+    <!--This is the head section-->
+    <!-- <style> ... </style> -->
+  </head>
+  <body>
+    <link rel="stylesheet" href="./style.css" />
+    <div>
+      <link href="./index.css" rel="stylesheet" />
+
+      <div class="home-container">
+        <section class="home-hero">
+          <div class="home-heading">
+            <h1 class="home-header">Bel Frens</h1>
+            <p class="home-caption">
+              A unique collection of 25 frens, based off the history of $BEL
+            </p>
+          </div>
+          <div class="home-buttons"></div>
+        </section>
+        <section class="home-collection">
+          <div class="home-content">
+            <span class="home-caption01">collection</span>
+            <div class="home-heading1"></div>
+          </div>
+          <div class="home-main">
+            <div class="home-card">
+              <div class="home-image">
+                <img
+                  alt="image"
+                  src="public/Characters/ac1-500h.png"
+                  class="home-image01"
+                />
+              </div>
+              <div class="home-content01">
+                <span class="home-caption02">Inscription:</span>
+                <h3 class="home-title">#2458579</h3>
+              </div>
+            </div>
+            <div class="home-card01">
+              <div class="home-image02">
+                <img
+                  alt="image"
+                  src="public/Characters/ac5-500h.png"
+                  class="home-image03"
+                />
+              </div>
+              <div class="home-content02">
+                <span class="home-caption03">Inscription:</span>
+                <h3 class="home-title01">#2736230</h3>
+              </div>
+            </div>
+            <div class="home-card02">
+              <div class="home-image04">
+                <img
+                  alt="image"
+                  src="public/Characters/ac3-500h.png"
+                  class="home-image05"
+                />
+              </div>
+              <div class="home-content03">
+                <span class="home-caption04">Inscription:</span>
+                <h3 class="home-title02">#2736231</h3>
+              </div>
+            </div>
+            <div class="home-card03">
+              <div class="home-image06">
+                <img
+                  alt="image"
+                  src="public/Characters/ac2-500h.png"
+                  class="home-image07"
+                />
+              </div>
+              <div class="home-content04">
+                <span class="home-caption05">Inscription:</span>
+                <h3 class="home-title03">#2736232</h3>
+              </div>
+            </div>
+            <div class="home-card04">
+              <div class="home-image08">
+                <img
+                  alt="image"
+                  src="public/Characters/ac7-500h.png"
+                  class="home-image09"
+                />
+              </div>
+              <div class="home-content05">
+                <span class="home-caption06">Inscription:</span>
+                <h3 class="home-title04">#2742287</h3>
+              </div>
+            </div>
+            <div class="home-card05">
+              <div class="home-image10">
+                <img
+                  alt="image"
+                  src="public/Characters/ac6-500h.png"
+                  class="home-image11"
+                />
+              </div>
+              <div class="home-content06">
+                <span class="home-caption07">Inscription:</span>
+                <h3 class="home-title05">#2742288</h3>
+              </div>
+            </div>
+            <section class="home-collection1">
+              <div class="home-content07">
+                <div class="home-heading2"></div>
+              </div>
+            </section>
+            <div>
+              <div class="home-container02">
+                <script>
+                  /*
+                   Accordion - Code Embed
+                   */
+                   const accordionContainers = document.querySelectorAll('[data-role='accordion-container']'); // All accordion containers
+                   const accordionContents = document.querySelectorAll('[data-role='accordion-content']'); // All accordion content
+                   const accordionIconsClosed = document.querySelectorAll('[data-role='accordion-icon-closed']'); // All accordion closed icons
+                   const accordionIconsOpen = document.querySelectorAll('[data-role='accordion-icon-open']'); // All accordion open icons
+
+                   accordionContents.forEach((accordionContent) => {
+                       accordionContent.style.display = 'none'; //Hides all accordion contents
+                   });
+
+                   accordionIconsClosed.forEach((icon) => {
+                     icon.style.display = 'flex'
+                   })
+
+                   accordionIconsOpen.forEach((icon) => {
+                     icon.style.display = 'none'
+                   })
+
+                   accordionContainers.forEach((accordionContainer, index) => {
+                       accordionContainer.addEventListener('click', () => {
+                           if (accordionContents[index].style.display === 'flex') {
+                               // If the accordion is already open, close it
+                               accordionContents[index].style.display = 'none';
+                               accordionIconsClosed[index].style.display = 'flex';
+                               accordionIconsOpen[index].style.display = 'none'
+                           } else {
+                               // If the accordion is closed, open it
+                               accordionContents.forEach((accordionContent) => {
+                                   accordionContent.style.display = 'none'; //Hides all accordion contents
+                               });
+
+                               accordionIconsClosed.forEach((accordionIcon) => {
+                                   accordionIcon.style.display = 'flex'; // Resets all icon transforms to 0deg (default)
+                               });
+
+                               accordionIconsOpen.forEach((accordionIcon) => {
+                                 accordionIcon.style.display = 'none';
+                               })
+
+                               accordionContents[index].style.display = 'flex'; // Shows accordion content
+                               accordionIconsClosed[index].style.display = 'none'; // Rotates accordion icon 180deg
+                               accordionIconsOpen[index].style.display = 'flex';
+                           }
+                       });
+                   });
+                </script>
+              </div>
+            </div>
+            <div class="home-card06">
+              <div class="home-image12">
+                <img
+                  alt="image"
+                  src="public/Characters/ac4-500h.png"
+                  class="home-image13"
+                />
+              </div>
+              <div class="home-content08">
+                <span class="home-caption08">Inscription:</span>
+                <h3 class="home-title06">#2736233</h3>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="home-collection2">
+          <div class="home-content09"><div class="home-heading3"></div></div>
+          <div class="home-main1">
+            <div class="home-card07">
+              <div class="home-image14">
+                <img
+                  alt="image"
+                  src="public/Characters/ac8-400h.png"
+                  class="home-image15"
+                />
+              </div>
+              <div class="home-content10">
+                <span class="home-caption09">Inscription:</span>
+                <h3 class="home-title07">#2743324</h3>
+              </div>
+            </div>
+            <div class="home-card08">
+              <div class="home-image16">
+                <img
+                  alt="image"
+                  src="public/Characters/ac9-400h.png"
+                  class="home-image17"
+                />
+              </div>
+              <div class="home-content11">
+                <span class="home-caption10">Inscription:</span>
+                <h3 class="home-title08">#2743325</h3>
+              </div>
+            </div>
+            <div class="home-card09">
+              <div class="home-image18">
+                <img
+                  alt="image"
+                  src="public/Characters/ac10-400h.png"
+                  class="home-image19"
+                />
+              </div>
+              <div class="home-content12">
+                <span class="home-caption11">Inscription:</span>
+                <h3 class="home-title09">#2744839</h3>
+              </div>
+            </div>
+            <div class="home-card10">
+              <div class="home-image20">
+                <img
+                  alt="image"
+                  src="public/Characters/ac11-400h.png"
+                  class="home-image21"
+                />
+              </div>
+              <div class="home-content13">
+                <span class="home-caption12">Inscription:</span>
+                <h3 class="home-title10">#2746328</h3>
+              </div>
+            </div>
+            <div class="home-card11">
+              <div class="home-image22">
+                <img
+                  alt="image"
+                  src="public/Characters/ac12-400h.png"
+                  class="home-image23"
+                />
+              </div>
+              <div class="home-content14">
+                <span class="home-caption13">Inscription:</span>
+                <h3 class="home-title11">#2746329</h3>
+              </div>
+            </div>
+            <div class="home-card12">
+              <div class="home-image24">
+                <img
+                  alt="image"
+                  src="public/Characters/ac14-400h.png"
+                  class="home-image25"
+                />
+              </div>
+              <div class="home-content15">
+                <span class="home-caption14">Inscription:</span>
+                <h3 class="home-title12">#2750079</h3>
+              </div>
+            </div>
+            <div class="home-card13">
+              <div class="home-image26">
+                <img
+                  alt="image"
+                  src="public/Characters/ac15-400h.png"
+                  class="home-image27"
+                />
+              </div>
+              <div class="home-content16">
+                <span class="home-caption15">Inscription:</span>
+                <h3 class="home-title13">#2750080</h3>
+              </div>
+            </div>
+            <section class="home-collection3">
+              <div class="home-content17">
+                <span class="home-caption16">collection</span>
+                <div class="home-heading4"></div>
+              </div>
+            </section>
+            <div>
+              <div class="home-container04">
+                <script>
+                  /*
+                   Accordion - Code Embed
+                   */
+                   const accordionContainers = document.querySelectorAll('[data-role='accordion-container']'); // All accordion containers
+                   const accordionContents = document.querySelectorAll('[data-role='accordion-content']'); // All accordion content
+                   const accordionIconsClosed = document.querySelectorAll('[data-role='accordion-icon-closed']'); // All accordion closed icons
+                   const accordionIconsOpen = document.querySelectorAll('[data-role='accordion-icon-open']'); // All accordion open icons
+
+                   accordionContents.forEach((accordionContent) => {
+                       accordionContent.style.display = 'none'; //Hides all accordion contents
+                   });
+
+                   accordionIconsClosed.forEach((icon) => {
+                     icon.style.display = 'flex'
+                   })
+
+                   accordionIconsOpen.forEach((icon) => {
+                     icon.style.display = 'none'
+                   })
+
+                   accordionContainers.forEach((accordionContainer, index) => {
+                       accordionContainer.addEventListener('click', () => {
+                           if (accordionContents[index].style.display === 'flex') {
+                               // If the accordion is already open, close it
+                               accordionContents[index].style.display = 'none';
+                               accordionIconsClosed[index].style.display = 'flex';
+                               accordionIconsOpen[index].style.display = 'none'
+                           } else {
+                               // If the accordion is closed, open it
+                               accordionContents.forEach((accordionContent) => {
+                                   accordionContent.style.display = 'none'; //Hides all accordion contents
+                               });
+
+                               accordionIconsClosed.forEach((accordionIcon) => {
+                                   accordionIcon.style.display = 'flex'; // Resets all icon transforms to 0deg (default)
+                               });
+
+                               accordionIconsOpen.forEach((accordionIcon) => {
+                                 accordionIcon.style.display = 'none';
+                               })
+
+                               accordionContents[index].style.display = 'flex'; // Shows accordion content
+                               accordionIconsClosed[index].style.display = 'none'; // Rotates accordion icon 180deg
+                               accordionIconsOpen[index].style.display = 'flex';
+                           }
+                       });
+                   });
+                </script>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="home-collection4">
+          <div class="home-content18"><div class="home-heading5"></div></div>
+          <div class="home-main2">
+            <div class="home-card14">
+              <div class="home-image28">
+                <img
+                  alt="image"
+                  src="public/Characters/ac16-400h.png"
+                  class="home-image29"
+                />
+              </div>
+              <div class="home-content19">
+                <span class="home-caption17">Inscription:</span>
+                <h3 class="home-title14">#2750081</h3>
+              </div>
+            </div>
+            <div class="home-card15">
+              <div class="home-image30">
+                <img
+                  alt="image"
+                  src="public/Characters/ac13-400h.png"
+                  class="home-image31"
+                />
+              </div>
+              <div class="home-content20">
+                <span class="home-caption18">Inscription:</span>
+                <h3 class="home-title15">#2750082</h3>
+              </div>
+            </div>
+            <div class="home-card16">
+              <div class="home-image32">
+                <img
+                  alt="image"
+                  src="public/Characters/ac17-400h.png"
+                  class="home-image33"
+                />
+              </div>
+              <div class="home-content21">
+                <span class="home-caption19">Inscription:</span>
+                <h3 class="home-title16">#2752332</h3>
+              </div>
+            </div>
+            <div class="home-card17">
+              <div class="home-image34">
+                <img
+                  alt="image"
+                  src="public/Characters/ac18-400h.png"
+                  class="home-image35"
+                />
+              </div>
+              <div class="home-content22">
+                <span class="home-caption20">Inscription:</span>
+                <h3 class="home-title17">#2752333</h3>
+              </div>
+            </div>
+            <div class="home-card18">
+              <div class="home-image36">
+                <img
+                  alt="image"
+                  src="public/Characters/ac19-400h.png"
+                  class="home-image37"
+                />
+              </div>
+              <div class="home-content23">
+                <span class="home-caption21">Inscription:</span>
+                <h3 class="home-title18">#2753552</h3>
+              </div>
+            </div>
+            <div class="home-card19">
+              <div class="home-image38">
+                <img
+                  alt="image"
+                  src="public/Characters/ac20-400h.png"
+                  class="home-image39"
+                />
+              </div>
+              <div class="home-content24">
+                <span class="home-caption22">Inscription:</span>
+                <h3 class="home-title19">#2753553</h3>
+              </div>
+            </div>
+            <div class="home-card20">
+              <div class="home-image40">
+                <img
+                  alt="image"
+                  src="public/Characters/ac21-400h.png"
+                  class="home-image41"
+                />
+              </div>
+              <div class="home-content25">
+                <span class="home-caption23">Inscription:</span>
+                <h3 class="home-title20">#2753554</h3>
+              </div>
+            </div>
+            <section class="home-collection5">
+              <div class="home-content26">
+                <span class="home-caption24">collection</span>
+                <div class="home-heading6"></div>
+              </div>
+            </section>
+            <div>
+              <div class="home-container06">
+                <script>
+                  /*
+                   Accordion - Code Embed
+                   */
+                   const accordionContainers = document.querySelectorAll('[data-role='accordion-container']'); // All accordion containers
+                   const accordionContents = document.querySelectorAll('[data-role='accordion-content']'); // All accordion content
+                   const accordionIconsClosed = document.querySelectorAll('[data-role='accordion-icon-closed']'); // All accordion closed icons
+                   const accordionIconsOpen = document.querySelectorAll('[data-role='accordion-icon-open']'); // All accordion open icons
+
+                   accordionContents.forEach((accordionContent) => {
+                       accordionContent.style.display = 'none'; //Hides all accordion contents
+                   });
+
+                   accordionIconsClosed.forEach((icon) => {
+                     icon.style.display = 'flex'
+                   })
+
+                   accordionIconsOpen.forEach((icon) => {
+                     icon.style.display = 'none'
+                   })
+
+                   accordionContainers.forEach((accordionContainer, index) => {
+                       accordionContainer.addEventListener('click', () => {
+                           if (accordionContents[index].style.display === 'flex') {
+                               // If the accordion is already open, close it
+                               accordionContents[index].style.display = 'none';
+                               accordionIconsClosed[index].style.display = 'flex';
+                               accordionIconsOpen[index].style.display = 'none'
+                           } else {
+                               // If the accordion is closed, open it
+                               accordionContents.forEach((accordionContent) => {
+                                   accordionContent.style.display = 'none'; //Hides all accordion contents
+                               });
+
+                               accordionIconsClosed.forEach((accordionIcon) => {
+                                   accordionIcon.style.display = 'flex'; // Resets all icon transforms to 0deg (default)
+                               });
+
+                               accordionIconsOpen.forEach((accordionIcon) => {
+                                 accordionIcon.style.display = 'none';
+                               })
+
+                               accordionContents[index].style.display = 'flex'; // Shows accordion content
+                               accordionIconsClosed[index].style.display = 'none'; // Rotates accordion icon 180deg
+                               accordionIconsOpen[index].style.display = 'flex';
+                           }
+                       });
+                   });
+                </script>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="home-collection6">
+          <div class="home-content27"><div class="home-heading7"></div></div>
+          <div class="home-main3">
+            <div class="home-card21">
+              <div class="home-image42">
+                <img
+                  alt="image"
+                  src="public/Characters/ac24-400h.png"
+                  class="home-image43"
+                />
+              </div>
+              <div class="home-content28">
+                <span class="home-caption25">Inscription:</span>
+                <h3 class="home-title21">#2757022</h3>
+              </div>
+            </div>
+            <div class="home-card22">
+              <div class="home-image44">
+                <img
+                  alt="image"
+                  src="public/Characters/ac22-400h.png"
+                  class="home-image45"
+                />
+              </div>
+              <div class="home-content29">
+                <span class="home-caption26">Inscription:</span>
+                <h3 class="home-title22">#2756741</h3>
+              </div>
+            </div>
+            <div class="home-card23">
+              <div class="home-image46">
+                <img
+                  alt="image"
+                  src="public/Characters/ac25-400h.png"
+                  class="home-image47"
+                />
+              </div>
+              <div class="home-content30">
+                <span class="home-caption27">Inscription:</span>
+                <h3 class="home-title23">#2756742</h3>
+              </div>
+            </div>
+            <div class="home-card24">
+              <div class="home-image48">
+                <img
+                  alt="image"
+                  src="public/Characters/ac23-400h.png"
+                  class="home-image49"
+                />
+              </div>
+              <div class="home-content31">
+                <span class="home-caption28">Inscription:</span>
+                <h3 class="home-title24">#2756743</h3>
+              </div>
+            </div>
+            <section class="home-collection7">
+              <div class="home-content32">
+                <span class="home-caption29">collection</span>
+                <div class="home-heading8"></div>
+              </div>
+            </section>
+            <div>
+              <div class="home-container08">
+                <script>
+                  /*
+                   Accordion - Code Embed
+                   */
+                   const accordionContainers = document.querySelectorAll('[data-role='accordion-container']'); // All accordion containers
+                   const accordionContents = document.querySelectorAll('[data-role='accordion-content']'); // All accordion content
+                   const accordionIconsClosed = document.querySelectorAll('[data-role='accordion-icon-closed']'); // All accordion closed icons
+                   const accordionIconsOpen = document.querySelectorAll('[data-role='accordion-icon-open']'); // All accordion open icons
+
+                   accordionContents.forEach((accordionContent) => {
+                       accordionContent.style.display = 'none'; //Hides all accordion contents
+                   });
+
+                   accordionIconsClosed.forEach((icon) => {
+                     icon.style.display = 'flex'
+                   })
+
+                   accordionIconsOpen.forEach((icon) => {
+                     icon.style.display = 'none'
+                   })
+
+                   accordionContainers.forEach((accordionContainer, index) => {
+                       accordionContainer.addEventListener('click', () => {
+                           if (accordionContents[index].style.display === 'flex') {
+                               // If the accordion is already open, close it
+                               accordionContents[index].style.display = 'none';
+                               accordionIconsClosed[index].style.display = 'flex';
+                               accordionIconsOpen[index].style.display = 'none'
+                           } else {
+                               // If the accordion is closed, open it
+                               accordionContents.forEach((accordionContent) => {
+                                   accordionContent.style.display = 'none'; //Hides all accordion contents
+                               });
+
+                               accordionIconsClosed.forEach((accordionIcon) => {
+                                   accordionIcon.style.display = 'flex'; // Resets all icon transforms to 0deg (default)
+                               });
+
+                               accordionIconsOpen.forEach((accordionIcon) => {
+                                 accordionIcon.style.display = 'none';
+                               })
+
+                               accordionContents[index].style.display = 'flex'; // Shows accordion content
+                               accordionIconsClosed[index].style.display = 'none'; // Rotates accordion icon 180deg
+                               accordionIconsOpen[index].style.display = 'flex';
+                           }
+                       });
+                   });
+                </script>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div>
+          <div class="home-container10">
+            <script>
+              /*
+               Accordion - Code Embed
+               */
+               const accordionContainers = document.querySelectorAll('[data-role='accordion-container']'); // All accordion containers
+               const accordionContents = document.querySelectorAll('[data-role='accordion-content']'); // All accordion content
+               const accordionIconsClosed = document.querySelectorAll('[data-role='accordion-icon-closed']'); // All accordion closed icons
+               const accordionIconsOpen = document.querySelectorAll('[data-role='accordion-icon-open']'); // All accordion open icons
+
+               accordionContents.forEach((accordionContent) => {
+                   accordionContent.style.display = 'none'; //Hides all accordion contents
+               });
+
+               accordionIconsClosed.forEach((icon) => {
+                 icon.style.display = 'flex'
+               })
+
+               accordionIconsOpen.forEach((icon) => {
+                 icon.style.display = 'none'
+               })
+
+               accordionContainers.forEach((accordionContainer, index) => {
+                   accordionContainer.addEventListener('click', () => {
+                       if (accordionContents[index].style.display === 'flex') {
+                           // If the accordion is already open, close it
+                           accordionContents[index].style.display = 'none';
+                           accordionIconsClosed[index].style.display = 'flex';
+                           accordionIconsOpen[index].style.display = 'none'
+                       } else {
+                           // If the accordion is closed, open it
+                           accordionContents.forEach((accordionContent) => {
+                               accordionContent.style.display = 'none'; //Hides all accordion contents
+                           });
+
+                           accordionIconsClosed.forEach((accordionIcon) => {
+                               accordionIcon.style.display = 'flex'; // Resets all icon transforms to 0deg (default)
+                           });
+
+                           accordionIconsOpen.forEach((accordionIcon) => {
+                             accordionIcon.style.display = 'none';
+                           })
+
+                           accordionContents[index].style.display = 'flex'; // Shows accordion content
+                           accordionIconsClosed[index].style.display = 'none'; // Rotates accordion icon 180deg
+                           accordionIconsOpen[index].style.display = 'flex';
+                       }
+                   });
+               });
+            </script>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      data-section-id="navbar"
+      src="https://unpkg.com/@teleporthq/teleport-custom-scripts"
+    ></script>
+  </body>
+</html>
